@@ -8,7 +8,7 @@ out_normal = cv2.VideoWriter('output_normal.avi', fourcc, 24.0, (640, 480))
 out_dilation = cv2.VideoWriter('output_dilation.avi', fourcc, 24.0, (640, 480))
 out_res = cv2.VideoWriter('output_res.avi', fourcc, 24.0, (640, 480))
 
-#default color range variables
+# Default color range variables
 lowHue = 0; lowSat = 91; lowVal = 45
 highHue = 37; highSat = 255; highVal = 255
 
@@ -74,7 +74,6 @@ while True:
 
     cv2.putText(frame, ('x='+str(int(xPos))), (10,60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,200,100), 2, cv2.LINE_AA)
     cv2.putText(frame, ('y='+str(int(yPos))), (10,80), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,200,100), 2, cv2.LINE_AA)
-    #cv2.putText(frame, ('z='+str(int(zPos))), (10,100), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,200,100), 2, cv2.LINE_AA)
 
     fwidth = cap.get(3)
     fheight = cap.get(4)
@@ -83,8 +82,8 @@ while True:
     cv2.putText(frame, ('fh='+str(fheight)), (10,40), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,250,250), 2, cv2.LINE_AA)
 
     cv2.imshow('frame', frame)
-    #cv2.imshow('mask', mask)
-    #cv2.imshow('erosion', erosion)
+    cv2.imshow('mask', mask)
+    cv2.imshow('erosion', erosion)
     cv2.imshow('dilation', dilation)
     cv2.imshow('result', res)
 
