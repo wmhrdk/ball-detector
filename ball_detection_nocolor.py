@@ -27,7 +27,6 @@ while True:
 
     cv2.putText(frame, ('x='+str(int(xPos))), (10,60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,200,100), 2, cv2.LINE_AA)
     cv2.putText(frame, ('y='+str(int(yPos))), (10,80), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,200,100), 2, cv2.LINE_AA)
-    #cv2.putText(frame, ('z='+str(int(zPos))), (10,100), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (50,200,100), 2, cv2.LINE_AA)
 
     fwidth = cap.get(3)
     fheight = cap.get(4)
